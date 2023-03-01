@@ -1,3 +1,39 @@
+@use '../../utilities/responsive';
+
 .hero {
+    min-height: 100vh;
     background-color: black;
+
+    &__inner {
+        display: flex;
+        align-items: center;
+    }
+
+    &__title {
+        font-size: var(--font-size-9);
+        margin: 0;
+    }
+
+    & span {
+        color: var(--color-accent);
+    }
+
+    @include responsive.max(64rem) {
+        font-size: var(--font-size-8);
+    }
+
+    &__description {
+        font-size: var(--font-size-3);
+        font-weight: 400;
+        color: var(--color-dark-800);
+        margin: -0.2rem 0 0 0.3rem;
+
+        & span {
+            color: var(--color-light);
+        }
+    }
+
+    &__content {
+        color: var(--color-light);
+    }
 }

@@ -2,11 +2,23 @@
     box-sizing: border-box;
 }
 
+// body.dark {
+//     background-color: var(--color-dark);
+//     color: var(--color-light);
+// }
+
 body {
+    // background-color: var(--color-light);
+    // color: var(--color-dark);
     margin: 0;
     padding: 0;
+    font-family: var(--font-sans)
 }
 
 img {
     max-width: 100%;
+}
+
+figure {
+    margin: 0;
 }

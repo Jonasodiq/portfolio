@@ -8,6 +8,7 @@
     <title>Portfolio</title>
     <link rel="stylesheet" href="https://use.typekit.net/czm0apn.css">
     <link rel="stylesheet" href="style.css">
+    <script src="main.js" defer></script>
 </head>
 
 <div class="container">
@@ -15,21 +16,24 @@
     <header class="header">
         <div class="header__inner">
             <!-- Logo -->
-            <a href="index.html" class="header__branding">
-                <div class="header__logo header__circle">J</div>
+            <a href="index.html" class="header__logo">
+                <div class="header__circle">J</div>
             </a>
 
             <!-- Menu -->
             <nav class="menu">
                 <ul class="menu__list">
-                    <li class="menu__item menu__item--current"><a href="#home" class="menu__link">Home</a></li>
+                    <li class="menu__item"><a href="#home" class="menu__link">Home</a></li>
                     <li class="menu__item"><a href="#work" class="menu__link">Work</a></li>
                     <li class="menu__item"><a href="#projects" class="menu__link">Projects</a></li>
                     <li class="menu__item"><a href="#about" class="menu__link">About me</a></li>
-                    <li class="menu__item menu__item--buttom"><a href="#contact" class="menu__link">Hire me!</a>
+                    <li class="menu__item menu__item--button"><a href="#contact" class="menu__link">Hire me!</a>
                     </li>
                 </ul>
             </nav>
+            <!-- Toggle -->
+            <!-- <input type="checkbox" id="toggle">
+            <label for="toggle" id="dark--toggle"></label> -->
 
             <!-- Hamburger -->
             <button class="header__hamburger header__circle">
@@ -43,8 +47,10 @@
     <section id="home" class="hero">
         <div class="hero__inner">
             <div class="hero__content">
-                <h1 class="hero__title">Hello<span>.</span>õ</h1>
-                <h4 class="hero__description">My name is <span>Jonas</span> . I´m a designer & developer</h4>
+                <h1 class="hero__title">Hello there!</h1>
+                <h4 class="hero__description">My name is <span>Jonas.</span> I´m a <span>designer</span> &
+                    <span>developer</span>
+                </h4>
             </div>
 
         </div>

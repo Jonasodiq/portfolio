@@ -1,0 +1,27 @@
+@use '../components/buttons';
+
+.menu {
+    font-family: 'AmericanTypewriter-Bold';
+
+    &__list {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        display: flex;
+        align-items: center;
+        gap: var(--gap-l);
+    }
+
+    &__link {
+        color: var(--color-light);
+        transition: color 0.2s;
+
+        &:hover {
+            color: var(--color-accent);
+        }
+    }
+
+    &__item--button &__link {
+        @include buttons.default;
+    }
+}
