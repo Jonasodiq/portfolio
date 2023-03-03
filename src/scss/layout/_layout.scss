@@ -8,8 +8,11 @@
     display: grid;
     grid-template-columns: minmax(2rem, 1fr) [inner-start] minmax(0, 67.5rem) [inner-end] minmax(2rem, 1fr);
 
+    // 1024px (64rem)
     @include responsive.max(64rem) {
-        padding: 6rem;
+        padding: 4rem 0;
+        display: grid;
+        grid-template-columns: minmax(1rem, 1fr) [inner-start] minmax(0, 67.5rem) [inner-end] minmax(1rem, 1fr);
     }
 }
 
