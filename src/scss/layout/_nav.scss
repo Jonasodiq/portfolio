@@ -1,7 +1,29 @@
 @use '../components/buttons';
+@use '../utilities/responsive';
 
 .menu {
     font-family: 'AmericanTypewriter-Bold';
+
+    @include responsive.max(55rem) {
+        display: none;
+        background-color: rgba(0, 0, 0, 0.9);
+        position: fixed;
+        width: 100vw;
+        height: 100vh;
+        z-index: 99;
+        grid-template-columns: var(--grid-container);
+
+        &__visible {
+            display: grid;
+        }
+
+        &__inner {
+            grid-column: inner;
+            display: flex;
+            justify-content: start;
+            align-items: center;
+        }
+    }
 
     &__list {
         margin: 0;
@@ -10,6 +32,13 @@
         display: flex;
         align-items: center;
         gap: var(--gap-l);
+
+        @include responsive.max(55rem) {
+            display: grid;
+            padding-top: 20rem;
+            gap: 1rem;
+
+        }
     }
 
     &__link {
