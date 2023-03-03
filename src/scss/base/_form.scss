@@ -1,0 +1,45 @@
+@use "../components/buttons" as button;
+
+::placeholder {
+    color: var(--color-dark-100);
+}
+
+input,
+button {
+
+    &[type="text"],
+    &[type="email"],
+    &[type="tel"] {
+        max-width: 100%;
+        width: 100%;
+        border: 1px solid var(--color-dark-900);
+        background-color: var(--color-light-200);
+        padding: 1rem 1rem;
+        font-size: var(--font-size-1);
+        font-family: var(--font-sans);
+
+        &:focus {
+            outline: 0;
+            border-color: var(--color-dark-700);
+        }
+    }
+
+    &[type="submit"] {
+        @include button.default($color: var(--color-dark), $background: var(--color-light));
+    }
+}
+
+textarea {
+    max-width: 100%;
+    width: 100%;
+    border: 1px solid var(--color-dark-900);
+    background-color: var(--color-light-200);
+    padding: 1rem 1rem;
+    font-size: var(--font-size-1);
+    font-family: var(--font-sans);
+
+    &:focus {
+        outline: 0;
+        border-color: var(--color-light-700);
+    }
+}
