@@ -21,15 +21,19 @@
             </a>
 
             <!-- Menu -->
-            <nav class="menu">
-                <ul class="menu__list">
-                    <li class="menu__item"><a href="#home" class="menu__link">Home</a></li>
-                    <li class="menu__item"><a href="#work" class="menu__link">Work</a></li>
-                    <li class="menu__item"><a href="#projects" class="menu__link">Projects</a></li>
-                    <li class="menu__item"><a href="#about" class="menu__link">About me</a></li>
-                    <li class="menu__item menu__item--button"><a href="#contact" class="menu__link">Hire me!</a>
-                    </li>
-                </ul>
+            <nav class="menu menu__visible">
+                <div class="menu__inner">
+
+                    <ul class="menu__list">
+                        <li class="menu__item"><a href="#home" class="menu__link">Home</a></li>
+                        <li class="menu__item"><a href="#work" class="menu__link">Work</a></li>
+                        <li class="menu__item"><a href="#projects" class="menu__link">Projects</a></li>
+                        <li class="menu__item"><a href="#about" class="menu__link">About me</a></li>
+                        <li class="menu__item menu__item--button"><a href="#about" class="menu__link">Hire me!</a>
+                        </li>
+                    </ul>
+                </div>
+
             </nav>
             <!-- Toggle -->
             <!-- <input type="checkbox" id="toggle">
@@ -237,59 +241,58 @@
 
             </div>
         </div>
-
     </section>
 
     <!-- About -->
-    <section id="contact" class="about">
+    <section id="about" class="about">
         <div class="about__inner">
-
-            <!-- Social -->
-            <div class="about__social">
-                <ul class="social">
-                    <li class="social__item"><a href="" class="social__link"><img src="assets/icons/facebook.svg"
-                                alt="Fecebook logo"></a></li>
-                    <li class="social__item"><a href="" class="social__link"><img src="assets/icons/instagram.svg"
-                                alt="Instagram logo"></a></li>
-                    <li class="social__item"><a href="" class="social__link"><img src="assets/icons/pinterest.svg"
-                                alt="Pinterest logo"></a></li>
-                    <li class="social__item"><a href="" class="social__link"><img src="assets/icons/dribbble.svg"
-                                alt="Dribbble logo"></a></li>
-                </ul>
-            </div>
-
-            <!-- CONTENT -->
             <div class="about__content">
-                <h2 class="about__title">So, what about me?</h2>
-                <p class="about__text">There are loads of information I could write down about me, but what could be
-                    interesting to know about a nerd stuck with code as his best friend. As it turns out, a lot!</p>
-                <a href="" class="about__link arrow-link">
-                    Read more
-                    <svg xmlns="http://www.w3.org/2000/svg" width="22.414" height="16.828" viewBox="0 0 22.414 16.828">
-                        <g id="Group_9" data-name="Group 9" transform="translate(-797.5 -1156.101)">
-                            <line id="Line_4" data-name="Line 4" x2="20" transform="translate(798.5 1164.5)" fill="none"
-                                stroke="#b1ada1" stroke-linecap="round" stroke-width="2" />
-                            <line id="Line_5" data-name="Line 5" x2="7" y2="6.985" transform="translate(811.5 1157.515)"
-                                fill="none" stroke="#b1ada1" stroke-linecap="round" stroke-width="2" />
-                            <line id="Line_6" data-name="Line 6" y1="7.015" x2="7" transform="translate(811.5 1164.5)"
-                                fill="none" stroke="#b1ada1" stroke-linecap="round" stroke-width="2" />
-                        </g>
-                    </svg>
-                </a>
 
+                <h2 class="about__title">About me.</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    et dolore magna aliqua.</p>
+
+                <!-- Social -->
+                <div class="about__social">
+                    <ul class="social">
+                        <li class="social__item"><a href="" class="social__link"><img src="assets/icons/facebook.svg"
+                                    alt="Fecebook logo"></a></li>
+                        <li class="social__item"><a href="" class="social__link"><img src="assets/icons/instagram.svg"
+                                    alt="Instagram logo"></a></li>
+                        <li class="social__item"><a href="" class="social__link"><img src="assets/icons/pinterest.svg"
+                                    alt="Pinterest logo"></a></li>
+                        <li class="social__item"><a href="" class="social__link"><img src="assets/icons/dribbble.svg"
+                                    alt="Dribbble logo"></a></li>
+                    </ul>
+                </div>
             </div>
 
+            <!-- Contact Form -->
+            <div class="contact-form">
+                <h2 class="contact-form__title">Hire me!</h2>
+                <form action="" class="contact-form__form">
+                    <input type="text" name="name" id="" placeholder="Name:*" required />
+
+                    <div class="contact-form__row">
+                        <input type="tel" name="phone" id="" placeholder="Telefon:*" required />
+                        <input type="email" name="email" id="" placeholder="Epost:*" required />
+                    </div>
+                    <textarea name="textarea" id="" cols="30" rows="3" placeholder="Other information"></textarea>
+                    <button type="submit">Submit</button>
+                </form>
+            </div>
 
         </div>
-
     </section>
 
     <!-- Footer -->
     <footer class="footer">
 
         <div class="footer__content">
-            &copy; Copyright 2022, Jonas Niyazson. All rights reserved.
+            Jonas Niyazson &copy; Copyright 2023. All rights reserved.
         </div>
+
+        <!-- Scroll -->
         <a href="#home" class="scroll-up">
             <svg xmlns="http://www.w3.org/2000/svg" width="15.99" height="21.216" viewBox="0 0 15.99 21.216">
                 <g id="Group_13" data-name="Group 13" transform="translate(1.414 20.216) rotate(-90)">
