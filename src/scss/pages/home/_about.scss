@@ -41,7 +41,6 @@
     display: flex;
     align-items: center;
     justify-content: space-around;
-    // gap: var(--gap-sm);
 
     &__link {
         background-color: var(--color-dark);
@@ -52,7 +51,6 @@
         align-items: center;
         justify-content: center;
         transition: background-color 0.2s;
-        ;
 
         &:hover {
             background-color: var(--color-accent);
@@ -72,11 +70,11 @@
 
     input,
     textarea {
+        margin-bottom: var(--gap-m);
+
         @include responsive.max(30rem) {
             --gap-m: 1rem;
         }
-
-        margin-bottom: var(--gap-m);
     }
 
     textarea {
